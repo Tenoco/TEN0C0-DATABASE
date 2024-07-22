@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>T€N0C0 DATABASE</title>
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .snippet {
+            background-color: #1e1e1e;
+            padding: 20px;
+            margin: 10px 0;
+            border-radius: 5px;
+        }
+        .snippet-title {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        .snippet-content {
+            background-color: #333;
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .copy-btn {
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        .copy-btn:hover {
+            background-color: #0056b3;
+        }
+        .about-section {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #555;
+        }
+        .footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #888;
+        }
+    </style>
+    <script>
+        function copyToClipboard(text) {
+            navigator.clipboard.writeText(text).then(() => {
+                alert('Copied to clipboard');
+            }, (err) => {
+                console.error('Could not copy text: ', err);
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>T€N0C0 DATABASE</h1>
+        
+        <!-- Data Section -->
+        <div id="data-section">
+            <div class="snippet">
+                <div class="snippet-title">Global Economic Outlook</div>
+                <div class="snippet-content">
+                    The global economy is projected to grow by 3.5% in 2024, driven by recoveries in both developed and emerging markets.
+                </div>
+                <button class="copy-btn" onclick="copyToClipboard('The global economy is projected to grow by 3.5% in 2024, driven by recoveries in both developed and emerging markets.')">Copy</button>
+            </div>
+            <div class="snippet">
+                <div class="snippet-title">Climate Change Initiatives</div>
+                <div class="snippet-content">
+                    Nations worldwide have pledged to reduce carbon emissions by 40% by 2030 as part of the Paris Agreement.
+                </div>
+                <button class="copy-btn" onclick="copyToClipboard('Nations worldwide have pledged to reduce carbon emissions by 40% by 2030 as part of the Paris Agreement.')">Copy</button>
+            </div>
+            <div class="snippet">
+                <div class="snippet-title">Advancements in AI Technology</div>
+                <div class="snippet-content">
+                    AI technology continues to evolve, with significant advancements in machine learning, natural language processing, and robotics.
+                </div>
+                <button class="copy-btn" onclick="copyToClipboard('AI technology continues to evolve, with significant advancements in machine learning, natural language processing, and robotics.')">Copy</button>
+            </div>
+            <div class="snippet">
+                <div class="snippet-title">Health Update: COVID-19</div>
+                <div class="snippet-content">
+                    The latest updates on the COVID-19 pandemic show a decrease in cases globally, with vaccination rates continuing to rise.
+                </div>
+                <button class="copy-btn" onclick="copyToClipboard('The latest updates on the COVID-19 pandemic show a decrease in cases globally, with vaccination rates continuing to rise.')">Copy</button>
+            </div>
+            <div class="snippet">
+                <div class="snippet-title">Space Exploration</div>
+                <div class="snippet-content">
+                    NASA's new Artemis program aims to return humans to the Moon by 2025, with plans to establish a sustainable presence.
+                </div>
+                <button class="copy-btn" onclick="copyToClipboard('NASA\'s new Artemis program aims to return humans to the Moon by 2025, with plans to establish a sustainable presence.')">Copy</button>
+            </div>
+            <div class="snippet">
+    <div class="snippet-title">NASA’s NEOWISE Concludes, NEO Surveyor Emerges: A New Era in Planetary Defense</div>
+    <div class="snippet-content">
+        NASA’s NEOWISE mission ends, and NEO Surveyor takes over to enhance planetary defense by detecting near-Earth objects.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('NASA’s NEOWISE mission ends, and NEO Surveyor takes over to enhance planetary defense by detecting near-Earth objects.')">Copy</button>
+</div>
+<div class="snippet">
+    <div class="snippet-title">New Hope for Flu Prevention: Universal Vaccine Shows Promise in Primate Trials</div>
+    <div class="snippet-content">
+        A universal flu vaccine developed by Oregon Health and Science University shows promising results in primate trials, potentially paving the way for broader flu prevention.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('A universal flu vaccine developed by Oregon Health and Science University shows promising results in primate trials, potentially paving the way for broader flu prevention.')">Copy</button>
+</div>
+<div class="snippet">
+    <div class="snippet-title">Electroadhesion: The Magic of Making Materials Stick Without Glue</div>
+    <div class="snippet-content">
+        A novel electroadhesion process allows for the easy and reversible attachment of hydrogels to metals using electricity, effective on a variety of materials.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('A novel electroadhesion process allows for the easy and reversible attachment of hydrogels to metals using electricity, effective on a variety of materials.')">Copy</button>
+</div>
+<div class="snippet">
+    <div class="snippet-title">Galactic Game Changer: Unveiling the Hidden Satellites of the Milky Way</div>
+    <div class="snippet-content">
+        Researchers discovered two new satellite galaxies of the Milky Way, suggesting a higher number of satellites than previously thought.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Researchers discovered two new satellite galaxies of the Milky Way, suggesting a higher number of satellites than previously thought.')">Copy</button>
+</div>
+<div class="snippet">
+    <div class="snippet-title">Can Computers Ever Be Conscious? Scientist Weighs In</div>
+    <div class="snippet-content">
+        A new paper explores the necessary conditions for computer consciousness, highlighting key differences between brains and computers.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('A new paper explores the necessary conditions for computer consciousness, highlighting key differences between brains and computers.')">Copy</button>
+  
+</div>
+<div class="snippet">
+    <div class="snippet-title">Simple Way to Manage App Execution Aliases on Windows 10</div>
+    <div class="snippet-content">
+        Windows 10 allows you to manage app execution aliases, making it easier to access your favorite applications quickly.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Windows 10 allows you to manage app execution aliases, making it easier to access your favorite applications quickly.')">Copy</button>
+</div>
+<div class="snippet">
+    <div class="snippet-title">New Sheikah Slate Update Unveiled in Latest Tech News</div>
+    <div class="snippet-content">
+        The Sheikah Slate from 'The Legend of Zelda: Breath of the Wild' receives a new update, enhancing its features and usability.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('The Sheikah Slate from The Legend of Zelda: Breath of the Wild receives a new update, enhancing its features and usability.')">Copy</button>
+</div>
+<div class="snippet">
+    <div class="snippet-title">Google's AI Language Model Now Supports More Languages</div>
+    <div class="snippet-content">
+        Google has expanded its AI language model to support several new languages, improving its global communication capabilities.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Google has expanded its AI language model to support several new languages, improving its global communication capabilities.')">Copy</button>
+</div>
+<div class="snippet">
+    <div class="snippet-title">Tesla's Latest Software Update Adds New Features</div>
+    <div class="snippet-content">
+        Tesla's newest software update introduces additional functionalities, including enhanced autopilot and entertainment options.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Tesla's newest software update introduces additional functionalities, including enhanced autopilot and entertainment options.')">Copy</button>
+</div>
+<div class="snippet">
+    <div class="snippet-title">Microsoft Announces Windows 11 Release Date</div>
+    <div class="snippet-content">
+        Microsoft has officially announced the release date for Windows 11, which promises a host of new features and a redesigned interface.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Microsoft has officially announced the release date for Windows 11, which promises a host of new features and a redesigned interface.')">Copy</button>
+</div>
+<div class="snippet">
+    <div class="snippet-title">Apple's New Privacy Features in iOS 15</div>
+    <div class="snippet-content">
+        Apple's iOS 15 introduces advanced privacy features, allowing users more control over their data and app permissions.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Apple's iOS 15 introduces advanced privacy features, allowing users more control over their data and app permissions.')">Copy</button>
+</div>
+<div class="snippet">
+    <div class="snippet-title">Samsung Unveils Galaxy Z Fold 3</div>
+    <div class="snippet-content">
+        Samsung has unveiled the Galaxy Z Fold 3, featuring a more durable design and improved folding mechanism.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Samsung has unveiled the Galaxy Z Fold 3, featuring a more durable design and improved folding mechanism.')">Copy</button>
+</div>
+<div class="snippet">
+    <div class="snippet-title">Amazon to Acquire MGM Studios</div>
+    <div class="snippet-content">
+        Amazon has announced its plans to acquire MGM Studios, adding a vast library of films and TV shows to its Prime Video service.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Amazon has announced its plans to acquire MGM Studios, adding a vast library of films and TV shows to its Prime Video service.')">Copy</button>
+</div>
+<div class="snippet">
+    <div class="snippet-title">Facebook's New Virtual Reality Headset</div>
+    <div class="snippet-content">
+        Facebook has revealed its latest virtual reality headset, offering improved graphics and a more immersive experience.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Facebook has revealed its latest virtual reality headset, offering improved graphics and a more immersive experience.')">Copy</button>
+</div>
+<div class="snippet">
+    <div class="snippet-title">Google Maps Introduces Eco-Friendly Routes</div>
+    <div class="snippet-content">
+        Google Maps now offers eco-friendly routes that aim to reduce fuel consumption and lower carbon emissions.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Google Maps now offers eco-friendly routes that aim to reduce fuel consumption and lower carbon emissions.')">Copy</button>
+</div>
+<div class="snippet">
+    <div class="snippet-title">Amazon Launches New Kindle with Enhanced Features</div>
+    <div class="snippet-content">
+        Amazon's newest Kindle model includes enhanced features such as a larger screen, longer battery life, and waterproof design.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Amazon's newest Kindle model includes enhanced features such as a larger screen, longer battery life, and waterproof design.')">Copy</button>
+</div>
+<div class="snippet">
+    <div class="snippet-title">NASA's Perseverance Rover Discovers New Evidence of Ancient Life on Mars</div>
+    <div class="snippet-content">
+        NASA's Perseverance rover has discovered new evidence suggesting the possibility of ancient microbial life on Mars.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('NASA's Perseverance rover has discovered new evidence suggesting the possibility of ancient microbial life on Mars.')">Copy</button>
+</div>
+<div class="snippet">
+    <div class="snippet-title">SpaceX Successfully Tests Starship Prototype</div>
+    <div class="snippet-content">
+        SpaceX has successfully completed a high-altitude test flight of its Starship prototype, marking a significant milestone in its space exploration goals.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('SpaceX has successfully completed a high-altitude test flight of its Starship prototype, marking a significant milestone in its space exploration goals.')">Copy</button>
+</div>
+<div class="snippet">
+    <div class="snippet-title">Adobe Announces New AI-Powered Features for Photoshop</div>
+    <div class="snippet-content">
+        Adobe has introduced new AI-powered features for Photoshop, enhancing editing capabilities and user experience.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Adobe has introduced new AI-powered features for Photoshop, enhancing editing capabilities and user experience.')">Copy</button>
+</div>
+<div class="snippet">
+    <div class="snippet-title">Twitter Rolls Out New Subscription Service</div>
+    <div class="snippet-content">
+        Twitter has launched a new subscription service called Twitter Blue, offering exclusive features and tools for power users.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Twitter has launched a new subscription service called Twitter Blue, offering exclusive features and tools for power users.')">Copy</button>
+</div>
+<div class="snippet">
+    <div class="snippet-title">Netflix Introduces New Mobile Gaming Service</div>
+    <div class="snippet-content">
+        Netflix has expanded its offerings with a new mobile gaming service, providing a variety of games to its subscribers.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Netflix has expanded its offerings with a new mobile gaming service, providing a variety of games to its subscribers.')">Copy</button>
+</div>
+<div class="snippet">
+    <div class="snippet-title">Instagram Adds New Shopping Features</div>
+    <div class="snippet-content">
+        Instagram has added new shopping features, allowing users to make purchases directly through the app.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Instagram has added new shopping features, allowing users to make purchases directly through the app.')">Copy</button>
+</div>
+<div class="snippet">
+    <div class="snippet-title">Apple's New M1 Chip Boosts MacBook Performance</div>
+    <div class="snippet-content">
+        Apple's new M1 chip significantly enhances the performance and battery life of the latest MacBook models.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Apple's new M1 chip significantly enhances the performance and battery life of the latest MacBook models.')">Copy</button>
+</div>
+<div class="snippet">
+    <div class="snippet-title">Microsoft Teams Introduces New Collaboration Tools</div>
+    <div class="snippet-content">
+        Microsoft Teams has introduced new collaboration tools designed to improve remote work efficiency and communication.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Microsoft Teams has introduced new collaboration tools designed to improve remote work efficiency and communication.')">Copy</button>
+</div>
+<div class="snippet">
+    <div class="snippet-title">Google Workspace Gets Major Update</div>
+    <div class="snippet-content">
+        Google Workspace has received a major update, featuring new tools and integrations to enhance productivity.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Google Workspace has received a major update, featuring new tools and integrations to enhance productivity.')">Copy</button>
+</div>
+<div class="snippet">
+    <div class="snippet">
+    <div class="snippet-title">Spotify Launches New Podcast Subscription Service</div>
+    <div class="snippet-content">
+        Spotify has introduced a new podcast subscription service, allowing creators to offer exclusive content to subscribers.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Spotify has introduced a new podcast subscription service, allowing creators to offer exclusive content to subscribers.')">Copy</button>
+</div>
+<div class="snippet">
+    <div class="snippet-title">Amazon Expands Its Prime Delivery Services</div>
+    <div class="snippet-content">
+        Amazon has expanded its Prime delivery services to include more cities, offering faster shipping options for customers.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Amazon has expanded its Prime delivery services to include more cities, offering faster shipping options for customers.')">Copy</button>
+</div>
+<div class="snippet">
+    <div class="snippet-title">Google Introduces New Security Features for Chrome</div>
+    <div class="snippet-content">
+        Google has rolled out new security features for Chrome, enhancing user protection against phishing and malware attacks.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Google has rolled out new security features for Chrome, enhancing user protection against phishing and malware attacks.')">Copy</button>
+</div>
+<div class="snippet">
+    <div class="snippet-title">Microsoft Azure Announces New Cloud Services</div>
+    <div class="snippet-content">
+        Microsoft Azure has announced new cloud services aimed at improving scalability and performance for enterprise applications.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Microsoft Azure has announced new cloud services aimed at improving scalability and performance for enterprise applications.')">Copy</button>
+</div>
+<div class="snippet">
+    <div class="snippet-title">Tesla Opens New Gigafactory in Texas</div>
+    <div class="snippet-content">
+        Tesla has officially opened its new Gigafactory in Texas, which will produce electric vehicles and battery components.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Tesla has officially opened its new Gigafactory in Texas, which will produce electric vehicles and battery components.')">Copy</button>
+</div>
+<div class="snippet">
+    <div class="snippet-title">Intel Announces New 11th Gen Processors</div>
+    <div class="snippet-content">
+        Intel has announced its new 11th Gen processors, promising significant performance improvements for laptops and desktops.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Intel has announced its new 11th Gen processors, promising significant performance improvements for laptops and desktops.')">Copy</button>
+</div>
+<div class="snippet">
+    <div class="snippet-title">Samsung's New QLED TVs Offer Enhanced Picture Quality</div>
+    <div class="snippet-content">
+        Samsung's latest QLED TVs feature advanced picture quality en
