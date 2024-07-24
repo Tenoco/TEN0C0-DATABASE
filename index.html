@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>T€N0C0 DATABASE</title>
+  
     <style>
         body {
             background-color: #121212;
@@ -68,7 +69,36 @@
 <body>
     <div class="container">
         <h1>T€N0C0 DATABASE</h1>
+<!-- Search Input with Style -->
+<input type="text" id="search" placeholder="Search snippets..." onkeyup="filterSnippets()" style="width: 100%; padding: 10px; margin-bottom: 20px; border: 1px solid #00aaff; border-radius: 5px; background-color: #1e1e1e; color: #ffffff; font-family: monospace; font-size: 16px;">
+
+<!-- JavaScript for Filtering Snippets -->
+<script>
+    // Function to normalize text without removing special characters
+    function normalize(text) {
+        return text.toLowerCase();
+    }
+
+    // Filter snippets based on the search input
+    function filterSnippets() {
+        let input = normalize(document.getElementById('search').value);
+        let snippets = document.getElementsByClassName('snippet');
         
+        // Iterate over each snippet and determine visibility
+        for (let i = 0; i < snippets.length; i++) {
+            let snippet = snippets[i];
+            let title = normalize(snippet.querySelector('.snippet-title').innerText);
+            let content = normalize(snippet.querySelector('.snippet-content').innerText);
+            
+            // Check if the input matches title or content
+            if (title.includes(input) || content.includes(input)) {
+                snippet.style.display = '';
+            } else {
+                snippet.style.display = 'none';
+            }
+        }
+    }
+</script>
         <!-- Data Section -->
         <div id="data-section">
             <div class="snippet">
@@ -730,7 +760,235 @@
     <button class="copy-btn" onclick="copyToClipboard('NASA announced new milestones in space exploration with successful missions to Mars and the Moon, paving the way for future manned missions.')">Copy</button>
 </div>
 <div class="snippet">
+      
+      <div class="snippet">
+    <div class="snippet-title">T€N0C0 DATABASE</div>
+    <div class="snippet-content">
+        The T€N0C0 DATABASE is an advanced online platform designed for users to view and copy information snippets for free. Built using Flask in Python, it features a dark theme with blue elements and a monospace font. The database includes a 'Copy' button for easy access, an 'About' section detailing its creation, and a footer with the company slogan: "T€N0C0 - Pioneering smart technologies for a connected world."
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('The T€N0C0 DATABASE is an advanced online platform designed for users to view and copy information snippets for free. Built using Flask in Python, it features a dark theme with blue elements and a monospace font. The database includes a "Copy" button for easy access, an "About" section detailing its creation, and a footer with the company slogan: "T€N0C0 - Pioneering smart technologies for a connected world."')">Copy</button>
+</div>
+      
+      <div class="snippet">
+    <div class="snippet-title">T€N0C0 DATABASE Hosted on GitHub</div>
+    <div class="snippet-content">
+        The T€N0C0 DATABASE, an online platform for viewing and copying information snippets, is hosted on GitHub. This ensures reliability and accessibility for users worldwide. It features a dark theme with blue elements and a monospace font.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('The T€N0C0 DATABASE, an online platform for viewing and copying information snippets, is hosted on GitHub. This ensures reliability and accessibility for users worldwide. It features a dark theme with blue elements and a monospace font.')">Copy</button>
+</div>
+      
+      <div class="snippet">
+    <div class="snippet-title">T€N0C0 DATABASE Creation Date</div>
+    <div class="snippet-content">
+        The T€N0C0 DATABASE was created on July 21, 2024. It serves as a public database where users can view and copy information snippets for free, hosted on GitHub for reliability and accessibility.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('The T€N0C0 DATABASE was created on July 21, 2024. It serves as a public database where users can view and copy information snippets for free, hosted on GitHub for reliability and accessibility.')">Copy</button>
+</div>
     
+      <div class="snippet">
+    <div class="snippet-title">Samsung's Stretchable Phone</div>
+    <div class="snippet-content">
+        Samsung is on its way to launch a new phone with a stretchable screen that adjusts to four sizes. This innovative feature is aimed at providing enhanced user flexibility.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Samsung is on its way to launch a new phone with a stretchable screen that adjusts to four sizes. This innovative feature is aimed at providing enhanced user flexibility.')">Copy</button>
+</div>
+
+<div class="snippet">
+    <div class="snippet-title">Urban Logistics Innovations</div>
+    <div class="snippet-content">
+        Urban logistics innovations are transforming emerging cities into smart cities. These advancements are crucial for improving urban living conditions and efficiency.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Urban logistics innovations are transforming emerging cities into smart cities. These advancements are crucial for improving urban living conditions and efficiency.')">Copy</button>
+</div>
+
+<div class="snippet">
+    <div class="snippet-title">India's Drone Police</div>
+    <div class="snippet-content">
+        India police are equipping drones with pepper spray to enhance law enforcement capabilities and ensure public safety during large gatherings and protests.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('India police are equipping drones with pepper spray to enhance law enforcement capabilities and ensure public safety during large gatherings and protests.')">Copy</button>
+</div>
+
+<div class="snippet">
+    <div class="snippet-title">Tiny Computer Technology</div>
+    <div class="snippet-content">
+        A new tiny computer, small enough to sit on the edge of a nickel, has been developed. This technology could revolutionize wearable tech and microelectronics.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('A new tiny computer, small enough to sit on the edge of a nickel, has been developed. This technology could revolutionize wearable tech and microelectronics.')">Copy</button>
+</div>
+
+<div class="snippet">
+    <div class="snippet-title">Apple Watch Reviews</div>
+    <div class="snippet-content">
+        The Apple Watch continues to receive glowing reviews as it gains popularity among consumers. Its health tracking features and seamless integration with other Apple devices are highly praised.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('The Apple Watch continues to receive glowing reviews as it gains popularity among consumers. Its health tracking features and seamless integration with other Apple devices are highly praised.')">Copy</button>
+</div>
+      <!-- General Knowledge Snippets -->
+
+<div class="snippet">
+    <div class="snippet-title">Top Travel Destinations</div>
+    <div class="snippet-content">
+        Paris, France<br>
+        Kyoto, Japan<br>
+        Cape Town, South Africa<br>
+        New York City, USA<br>
+        Rome, Italy
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Paris, France\nKyoto, Japan\nCape Town, South Africa\nNew York City, USA\nRome, Italy')">Copy</button>
+</div>
+
+<div class="snippet">
+    <div class="snippet-title">Healthy Foods</div>
+    <div class="snippet-content">
+        Blueberries: High in antioxidants<br>
+        Salmon: Rich in Omega-3 fatty acids<br>
+        Spinach: Packed with vitamins<br>
+        Quinoa: Complete protein<br>
+        Almonds: Good source of healthy fats
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Blueberries: High in antioxidants\nSalmon: Rich in Omega-3 fatty acids\nSpinach: Packed with vitamins\nQuinoa: Complete protein\nAlmonds: Good source of healthy fats')">Copy</button>
+</div>
+
+<div class="snippet">
+    <div class="snippet-title">Commonly Confused Words</div>
+    <div class="snippet-content">
+        Their vs. There vs. They're<br>
+        Affect vs. Effect<br>
+        Your vs. You're
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Their vs. There vs. They\'re\nAffect vs. Effect\nYour vs. You\'re')">Copy</button>
+</div>
+
+<div class="snippet">
+    <div class="snippet-title">Basic Grammar Tips</div>
+    <div class="snippet-content">
+        Use commas to separate items in a list<br>
+        Apostrophes indicate possession or contractions<br>
+        "I before E except after C" rule
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Use commas to separate items in a list\nApostrophes indicate possession or contractions\n\"I before E except after C\" rule')">Copy</button>
+</div>
+
+<div class="snippet">
+    <div class="snippet-title">Basic Math Formulas</div>
+    <div class="snippet-content">
+        Area of a circle: πr²<br>
+        Pythagorean theorem: a² + b² = c²<br>
+        Quadratic formula: x = (-b ± √(b² - 4ac)) / 2a
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Area of a circle: πr²\nPythagorean theorem: a² + b² = c²\nQuadratic formula: x = (-b ± √(b² - 4ac)) / 2a')">Copy</button>
+</div>
+
+<div class="snippet">
+    <div class="snippet-title">Prime Numbers</div>
+    <div class="snippet-content">
+        2, 3, 5, 7, 11, 13, 17, 19, 23, 29
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('2, 3, 5, 7, 11, 13, 17, 19, 23, 29')">Copy</button>
+</div>
+
+<div class="snippet">
+    <div class="snippet-title">Periodic Table Elements</div>
+    <div class="snippet-content">
+        Hydrogen (H)<br>
+        Oxygen (O)<br>
+        Carbon (C)<br>
+        Nitrogen (N)<br>
+        Iron (Fe)
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Hydrogen (H)\nOxygen (O)\nCarbon (C)\nNitrogen (N)\nIron (Fe)')">Copy</button>
+</div>
+
+<div class="snippet">
+    <div class="snippet-title">Newton's Laws of Motion</div>
+    <div class="snippet-content">
+        First law: An object at rest stays at rest, and an object in motion stays in motion unless acted upon by a force.<br>
+        Second law: F = ma (Force equals mass times acceleration)<br>
+        Third law: For every action, there is an equal and opposite reaction.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('First law: An object at rest stays at rest, and an object in motion stays in motion unless acted upon by a force.\nSecond law: F = ma (Force equals mass times acceleration)\nThird law: For every action, there is an equal and opposite reaction.')">Copy</button>
+</div>
+
+<div class="snippet">
+    <div class="snippet-title">Common Cognitive Biases</div>
+    <div class="snippet-content">
+        Confirmation Bias: Tendency to search for or interpret information in a way that confirms one's preconceptions<br>
+        Anchoring Bias: Relying too heavily on the first piece of information encountered<br>
+        Availability Heuristic: Estimating the likelihood of events based on their availability in memory
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Confirmation Bias: Tendency to search for or interpret information in a way that confirms one\'s preconceptions\nAnchoring Bias: Relying too heavily on the first piece of information encountered\nAvailability Heuristic: Estimating the likelihood of events based on their availability in memory')">Copy</button>
+</div>
+
+<div class="snippet">
+    <div class="snippet-title">Famous Psychologists</div>
+    <div class="snippet-content">
+        Sigmund Freud: Psychoanalysis<br>
+        Carl Jung: Analytical psychology<br>
+        B.F. Skinner: Behaviorism
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Sigmund Freud: Psychoanalysis\nCarl Jung: Analytical psychology\nB.F. Skinner: Behaviorism')">Copy</button>
+</div>
+      
+      <!-- Additional Snippets -->
+
+<div class="snippet">
+    <div class="snippet-title">Common English Idioms</div>
+    <div class="snippet-content">
+        "Break the ice" - To start a conversation in a social setting.<br>
+        "Bite the bullet" - To endure a painful experience.<br>
+        "Piece of cake" - Something very easy to do.<br>
+        "Let the cat out of the bag" - To reveal a secret.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Break the ice: To start a conversation in a social setting.\nBite the bullet: To endure a painful experience.\nPiece of cake: Something very easy to do.\nLet the cat out of the bag: To reveal a secret.')">Copy</button>
+</div>
+
+<div class="snippet">
+    <div class="snippet-title">Math Constants</div>
+    <div class="snippet-content">
+        Pi (π) - 3.14159<br>
+        Euler's Number (e) - 2.71828<br>
+        Golden Ratio (φ) - 1.61803<br>
+        Square Root of 2 - 1.41421
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Pi (π): 3.14159\nEuler\'s Number (e): 2.71828\nGolden Ratio (φ): 1.61803\nSquare Root of 2: 1.41421')">Copy</button>
+</div>
+
+<div class="snippet">
+    <div class="snippet-title">Physics Formulas</div>
+    <div class="snippet-content">
+        Newton's Second Law: F = ma (Force = mass × acceleration)<br>
+        Kinetic Energy: KE = 1/2 mv² (KE = 0.5 × mass × velocity squared)<br>
+        Ohm's Law: V = IR (Voltage = current × resistance)<br>
+        Gravitational Force: F = G(m₁m₂)/r² (G = gravitational constant, m₁ and m₂ = masses, r = distance)
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Newton\'s Second Law: F = ma (Force = mass × acceleration)\nKinetic Energy: KE = 1/2 mv² (KE = 0.5 × mass × velocity squared)\nOhm\'s Law: V = IR (Voltage = current × resistance)\nGravitational Force: F = G(m₁m₂)/r² (G = gravitational constant, m₁ and m₂ = masses, r = distance)')">Copy</button>
+</div>
+
+<div class="snippet">
+    <div class="snippet-title">Science Facts</div>
+    <div class="snippet-content">
+        Water boils at 100°C (212°F) at standard atmospheric pressure.<br>
+        The speed of light in a vacuum is approximately 299,792 kilometers per second (km/s).<br>
+        DNA stands for Deoxyribonucleic Acid and contains the genetic blueprint for living organisms.<br>
+        The Earth's atmosphere is composed of roughly 78% nitrogen, 21% oxygen, and 1% other gases.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Water boils at 100°C (212°F) at standard atmospheric pressure.\nThe speed of light in a vacuum is approximately 299,792 kilometers per second (km/s).\nDNA stands for Deoxyribonucleic Acid and contains the genetic blueprint for living organisms.\nThe Earth\'s atmosphere is composed of roughly 78% nitrogen, 21% oxygen, and 1% other gases.')">Copy</button>
+</div>
+
+<div class="snippet">
+    <div class="snippet-title">Top 5 Programming Languages</div>
+    <div class="snippet-content">
+        Python: Great for beginners and widely used in data science.<br>
+        JavaScript: Essential for web development.<br>
+        Java: Commonly used in enterprise environments.<br>
+        C#: Popular for developing Windows applications.<br>
+        C++: High-performance language used in game development and systems programming.
+    </div>
+    <button class="copy-btn" onclick="copyToClipboard('Python: Great for beginners and widely used in data science.\nJavaScript: Essential for web development.\nJava: Commonly used in enterprise environments.\nC#: Popular for developing Windows applications.\nC++: High-performance language used in game development and systems programming.')">Copy</button>
+</div>
+      
+      
         </div>
         
         <!-- About Section -->
